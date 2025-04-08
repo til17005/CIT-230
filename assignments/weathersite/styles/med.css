@@ -1,0 +1,132 @@
+@media only screen and (max-width: 835px) and (min-width: 600px) {
+    .picgrid {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    /*** Navigation Bar ***/
+    nav {  
+        list-style-type: none;
+        margin: 0 auto 0 auto;
+        padding: 0;
+        background-color: #33658A;
+    }
+    nav ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #33658A;
+        border: none;
+    }
+
+    .navigate li a {
+        display: block;
+        color: #F6AE2D;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    .navigate li {
+        text-align: center;
+        border-bottom: 1px solid #F6AE2D;
+    }
+
+    .navigate li:last-child {
+        border-bottom: none;
+    }
+
+    .navigate li a.active {
+        background-color: #758E4F;
+        color: white;
+    }
+
+    .navigate li a:hover:not(.active) {
+        background-color: #F6AE2D;
+        color: white;
+    }
+    
+    .navigate.responsive { 
+        position: relative; 
+    }
+
+    .navigate.responsive li { 
+        background-color: #33658A;    
+        display: block; 
+        width: 100%; 
+        margin: 0 0 0 0; 
+        border-top: .25px solid #F6AE2D;
+        border-bottom: .25px solid #F6AE2D;
+    }
+    
+    .navigate.responsive li a {  
+        padding: .25rem;
+        color: #F6AE2D;
+        text-align: center;  
+        display: block; 
+        text-decoration:none; 
+    }
+
+    .navigate.responsive li a:hover { 
+        background-color: #33658A;
+        color: #86BBD8;
+    }
+
+    .container2 {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100%;
+        max-width: 850px;
+        height: auto;
+        color: #33658A;
+        margin: 0 auto 0 auto;
+    }
+
+    .container2 div {
+        vertical-align: middle;
+        text-align: center;
+        border-radius: 25px;
+        width: 17.5%;
+        background-color: rgba(117, 142, 79, 0.8);
+        border: 1.5px solid #33658A;
+        margin: 25px auto 0px auto;
+    }
+
+    .container2 img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 50%;
+        height: auto;
+    }
+
+    /*** Current Weather Condition ***/
+    .current {
+        display: inline-block;
+        border-radius: 25px;
+        vertical-align: middle;
+        margin: 1rem 0 1rem 5rem;
+        padding: .5rem;
+        vertical-align: middle;
+        color: #fff;
+        background-color: #86BBD8;
+        border: 3pt solid #F26419;
+        font-size: 1.1rem;
+        box-shadow: 5px 5px 5px black;
+    }
+
+    .current img {
+        width: 90px;
+        height: auto;
+        vertical-align: middle;
+    }
+
+    .current p {
+        display: inline-block;
+        vertical-align: middle;
+        padding: .5rem;
+        font-size: 14px;
+        color: #000;
+    }
+}

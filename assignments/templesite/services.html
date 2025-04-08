@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Temple Inn and Suites Index page for Matthew Tilton - Student in CIT 230: Web Frontend Development at Brigham Young University-Idaho">
+        <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="icon" type="image/png" href="images/moroni.jpg"> 
+        <title>Temple Inn & Suites</title>
+    </head>
+    <body>
+        <header>
+            <div class="heading">
+                <h1>
+                    <span class="heading-h1-1">Temple</span>
+                    <span class="heading-h1-1">Inn</span>
+                    <span class="heading-h2-1">and</span>
+                    <span class="heading-h1-1">Suites</span>
+                </h1>
+                <h3 class="left">Where Spirituality Meets Hospitality!</h3>
+            </div>     
+        </header> 
+        <nav> 
+            <button class="navburger" onclick="myNavburger()">&#9776;</button>           
+            <ul id="mainmenu" class="navigate">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temple.html">Temples</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>     
+            </ul>
+        </nav>
+      	<main>
+            <h3 class="sub">Services and Features</h3>
+            <ul class="main">
+                <li class="main1">Free access to changing rooms and bathroom facilities for temple patrons who need to change to and from church clothes</li>
+                <li class="main1">Day-care room and low cost, short-term babysitting services for the children of patrons</li>
+                <li class="main1">Long term stay accommodations in kitchenette suites for full-time temple missionaries</li>
+                <li class="main1">Temple history themed reception and sitting area</li>
+                <li class="main1">Wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food preparation and serving</li>
+                <li class="main1">Business center that supports family search and ordinance work</li>
+            </ul>
+            <h3 class="sub">Amenities</h3>
+            <ul class="main">
+                <li class="main1">Breakfast</li>
+                <li class="main1">Exercise/workout room</li>
+                <li class="main1">Indoor pool</li>
+                <li class="main1">WiFi high-speed internet access and smart TVs</li>
+                <li class="main1">Parking</li>
+                <li class="main1">Family history consultation and family ordinance card services</li>
+            </ul>
+        </main>      
+        <footer>
+            <ul class="navigate">
+                <li><a href="http://mormon.org">Mormon.org</a></li>
+                <li><a href="http://lds.org">LDS.org</a></li>                
+                <li><a href="https://www.lds.org/temples?lang=eng">More Latter-day Saint Temple Info</a></li>    
+            </ul>
+            <div>&copy; 2018 - Matthew M. Tilton - Utah - <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></div>
+            <div id="thisDay"></div>
+        </footer>
+        <script src="scripts/date.js"></script> 
+        <script src="scripts/navburger.js"></script>
+        <script src="scripts/wayfinding.js"></script>  
+    </body>
+</html>

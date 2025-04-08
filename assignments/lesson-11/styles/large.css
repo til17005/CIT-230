@@ -1,0 +1,108 @@
+@media only screen and (min-width: 835px) {
+    nav ul {  
+        text-align: center;
+        list-style-type: none;
+        margin: 0 auto 0 auto;
+        padding: 0;
+        background-color: #33658A;
+    }
+    .navigate {  
+        background-color: #33658A; 
+        overflow: hidden;   
+        text-align: center; 
+    }
+
+    .navigate li {
+        display: inline-block;
+        margin-left: 1.5rem; 
+        padding: .5em;
+    }
+
+    .navigate a {
+        display: block;
+        padding: .5rem; 
+        text-align: center; 
+        text-decoration: none;
+        color: #F6AE2D;
+    }
+
+    .navigate a:hover {  
+        color:#758E4F; 
+        background-color: #33658A;    
+    }
+
+    .hamburger { 
+        display: none; 
+    }
+
+    .container {
+        margin: 1em auto 0 auto;
+    }
+
+    .container2 {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100%;
+        max-width: 850px;
+        height: auto;
+        color: #33658A;
+        margin: 0 auto 0 auto;
+    }
+
+    .container2 div {
+        vertical-align: middle;
+        text-align: center;
+        border-radius: 25px;
+        width: 17.5%;
+        background-color: rgba(117, 142, 79, 0.8);
+        border: 1.5px solid #33658A;
+        margin: 25px auto 0px auto;
+    }
+
+    .container2 img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 50%;
+        height: auto;
+    }
+
+    /*** Current Weather Condition ***/
+    .current {
+        display: inline-block;
+        border-radius: 25px;
+        vertical-align: middle;
+        margin: 1rem 0 1rem 5rem;
+        padding: .5rem;
+        vertical-align: middle;
+        color: #fff;
+        background-color: #86BBD8;
+        border: 3pt solid #F26419;
+        font-size: 1.1rem;
+        box-shadow: 5px 5px 5px black;
+    }
+
+    .current img {
+        width: 90px;
+        height: auto;
+        vertical-align: middle;
+    }
+
+    .current p {
+        display: inline-block;
+        vertical-align: middle;
+        padding: .5rem;
+        font-size: 14px;
+        color: #000;
+    }
+
+    .picgrid {
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+
+    .picgrid figure:hover {
+        box-shadow: 10px 5px 10px #F26419;
+    }
+}

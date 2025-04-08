@@ -1,0 +1,86 @@
+body {
+    font-family: 'Merriweather', serif;
+}
+
+header {
+    background-color: #758E4F;
+    text-align: center;
+    padding: .5rem;
+    color: #fff;
+}
+
+header > img {  
+    vertical-align: middle;
+}
+
+.headertext {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 1rem 0 1rem 5rem;
+}
+
+.headertext h1 {
+    font-size: 45px;
+    font-family: 'Merriweather', serif;
+}
+
+.headerh1-1 {
+    font-size: 45px;
+    font-family: 'Merriweather', serif;
+    color: #86BBD8;
+}
+
+.headerh1-2 {
+    font-size: 45px;
+    font-family: 'Merriweather', serif;
+    color: #F6AE2D;
+}
+
+.headerh2 {
+    font-size: 32px;
+    font-family: 'Merriweather', serif;
+    padding: 0rem;
+    margin: 0rem 0 0rem 0rem;
+    color: #fff;
+}
+
+.subheading {
+    font-size: 1.5rem;
+    color: #33658A;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.current {
+    display: inline-block;
+    /*border-radius: 25px;*/
+    vertical-align: middle;
+    margin: 1rem 0 1rem 5rem;
+    padding: .5rem;
+    vertical-align: middle;
+    color: #fff;
+    background-color: #86BBD8;
+    border: 3pt solid #F26419;
+    font-size: 1.1rem;
+    /*box-shadow: 10px 10px 5px black;*/
+}
+
+.current img {
+    width: 90px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.current p {
+    display: inline-block;
+    vertical-align: middle;
+    padding: .5rem;
+    font-size: 14px;
+    color: #000;
+}
+
+footer p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 12px;
+}

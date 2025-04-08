@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Lesson 11: Assignment Soda Springs page for Matthew Tilton - Student in CIT 230: Web Frontend Development at Brigham Young University-Idaho">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather%7cOpen+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/med.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="icon" type="image/png" href="images/clear.png"> 
+        <title>WeatherorNot - Soda Springs</title>
+    </head>
+    <body>
+		<header>
+            <img src="images/clear.png" alt="WeatherorNot Logo">
+            <div class="headertext">
+                <h1>
+                    <span class="headerh1-1">Weather</span>
+                    <span class="headerh2">or</span>
+                    <span class="headerh1-2">Not</span>
+                </h1>
+                <div class="subheading">Up To Date Weather</div>
+            </div>
+            <div class="current">
+                <span id="currentImage"></span>
+                <span id="output4"></span>
+            </div>      
+        </header> 
+        <nav> 
+            <button class="hamburger" onclick="myHamburger()">&#9776;</button>           
+            <ul id="mainmenu" class="navigate">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>       
+            </ul>
+        </nav>
+      	<main>
+            <h2>The Town of Soda Springs</h2>
+            <div class="container">
+                <img src="images/sodasprings.jpeg" alt="Soda Springs Current Conditions">
+                <div class="imgbox">
+                    <h3>Weather Summary</h3>
+                    <p>
+                        Currently: <span class="pwhite"><span id="desc"></span></span><br>
+                        Temperature: <span class="pwhite"><span id="temp"></span>&deg; F</span><br>
+                        Humitity: <span class="pwhite"><span id="hum"></span>&#37;</span><br>
+                        Wind Speed: <span class="pwhite"><span id="speed"></span> mph</span><br>
+                        Wind Direction: <span class="pwhite" id="output3"></span><br>
+                        Wind Chill: <span class="pwhite" id="output2"></span><span class="pwhite">&deg; F</span>
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div id="article">
+                    <h3>Weather Jokes</h3>
+                    <div id="author">from various sources</div>
+                    <img src="images/rain-small.jpg" alt="Umbrella and Rainboots">
+                    <p>
+                        This section has been created so you can submit your funny weather jokes. 
+                        Please take the time when the link is available to submit your funniest!<br><br>
+                        
+                        Q: Can bees fly in the rain?<br>
+                        A: Not without their yellow jackets!<br><br>
+
+                        Q: What happens when fog lifts in California?<br>
+                        A: UCLA!<br><br>
+
+                        Q: What does a cloud wear under its raincoat?<br>
+                        A: Thunderwear!<br><br>
+                    </p>
+                </div>               
+            </div>
+            <div class="container">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/sodasprings-small.jpeg">
+                    <source media="(max-width: 800px)" srcset="images/sodasprings-med.jpeg">
+                    <img src="images/sodasprings-large.jpeg" alt="Awesome landscape picture">
+                </picture>                
+            </div>
+            <div class="container2">
+                <div>
+                    <br>
+                    <span id="fiveDay1"></span>
+                    <span id="icon1"></span>
+                    <span id="day1"></span><span>&deg; F</span>
+                    <br><br>
+                </div>
+                <div>
+                    <br>
+                    <span id="fiveDay2"></span>
+                    <span id="icon2"></span>
+                    <span id="day2"></span><span>&deg; F</span>
+                    <br><br>
+                </div>
+                <div>
+                    <br>
+                    <span id="fiveDay3"></span>
+                    <span id="icon3"></span>
+                    <span id="day3"></span><span>&deg; F</span>
+                    <br><br>
+                </div>
+                <div>
+                    <br>
+                    <span id="fiveDay4"></span>
+                    <span id="icon4"></span>
+                    <span id="day4"></span><span>&deg; F</span>
+                    <br><br>
+                </div>
+                <div>
+                    <br>
+                    <span id="fiveDay5"></span>
+                    <span id="icon5"></span>
+                    <span id="day5"></span><span>&deg; F</span>
+                    <br><br>                 
+                </div>
+            </div>
+            <div class="container">
+                <div class="container map">
+                    <img src="images/overcast.png" alt="Overcast Picture">
+                    <div id="site">
+                        The Weather Site<br>
+                        30 N 1st E<br>
+                        Soda Springs, ID 83276<br><br>
+                        Phone 999.999.9999<br>
+                        E-mail the weathersite@tws.com</div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23471.966212128864!2d-111.60632453674228!3d42.66144306907165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda+Springs%2C+ID+83276!5e0!3m2!1sen!2sus!4v1543444175401"></iframe>
+                </div>                 
+            </div>
+        </main>      
+      	<footer>
+            <div>&copy; 2018 - Matthew M. Tilton - Utah - <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></div>
+            <div id="thisDay"></div>
+        </footer>
+        <script src="scripts/currentdate.js"></script> 
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/sodasprings.js"></script>
+        <script src="scripts/wayfinding.js"></script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Temple Inn and Suites Index page for Matthew Tilton - Student in CIT 230: Web Frontend Development at Brigham Young University-Idaho">
+        <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="icon" type="image/png" href="images/moroni.jpg">
+        <title>Temple Inn & Suites</title>
+    </head>
+    <body>
+		<header>
+            <div class="heading">
+                <h1>
+                    <span class="heading-h1-1">Temple</span>
+                    <span class="heading-h1-1">Inn</span>
+                    <span class="heading-h2-1">and</span>
+                    <span class="heading-h1-1">Suites</span>
+                </h1>
+                <h3 class="left">Where Spirituality Meets Hospitality!</h3>
+            </div>     
+        </header> 
+        <nav> 
+            <button class="navburger" onclick="myNavburger()">&#9776;</button>           
+            <ul id="mainmenu" class="navigate">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temple.html">Temples</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>     
+            </ul>
+        </nav>
+      	<main>
+            <h2 class="area">Home Office</h2>
+            <iframe class="contact" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4050197057204!2d-77.09772584875306!3d38.98325177945716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1545251379515"></iframe>
+            <h3 class="left"><a class="left" href="tel:555-555-5555">Phone: (555)555-5555</a></h3>
+            <h3 class="left"><a class="left" href="mailto:info@templeinn.com">E-mail: info@templeinn.com</a></h3>
+        </main>      
+      	<footer>
+            <ul class="navigate">
+                <li><a href="http://mormon.org">Mormon.org</a></li>
+                <li><a href="http://lds.org">LDS.org</a></li>                
+                <li><a href="https://www.lds.org/temples?lang=eng">More Latter-day Saint Temple Info</a></li>    
+            </ul>
+            <div>&copy; 2018 - Matthew M. Tilton - Utah - <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></div>
+            <div id="thisDay"></div>
+        </footer>
+        <script src="scripts/date.js"></script> 
+        <script src="scripts/navburger.js"></script>
+        <script src="scripts/wayfinding.js"></script>     
+    </body>
+</html>

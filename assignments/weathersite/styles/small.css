@@ -1,0 +1,539 @@
+/*** Begin Media Filter ***/
+@media only screen and (max-width: 600px) {
+    /*** Current Weather Condition ***/
+    .current {
+        display: none;
+    }
+
+    .current img {
+        display: none;
+    }
+
+    .current p {
+        display: none;
+    }
+
+    /*** Navigation Bar ***/
+    nav {  
+        list-style-type: none;
+        margin: 0 auto 0 auto;
+        padding: 0;
+        background-color: #33658A;
+    }
+    nav ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #33658A;
+        border: none;
+    }
+
+    .navigate li a {
+        display: block;
+        color: #F6AE2D;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    .navigate li {
+        text-align: center;
+        border-bottom: 1px solid #F6AE2D;
+    }
+
+    .navigate li:last-child {
+        border-bottom: none;
+    }
+
+    .navigate li a.active {
+        background-color: #758E4F;
+        color: white;
+    }
+
+    .navigate li a:hover:not(.active) {
+        background-color: #F6AE2D;
+        color: white;
+    }
+    
+    .navigate.responsive { 
+        position: relative; 
+    }
+
+    .navigate.responsive li { 
+        background-color: #33658A;    
+        display: block; 
+        width: 100%; 
+        margin: 0 0 0 0; 
+        border-top: .25px solid #F6AE2D;
+        border-bottom: .25px solid #F6AE2D;
+    }
+    
+    .navigate.responsive li a {  
+        padding: .25rem;
+        color: #F6AE2D;
+        text-align: center;  
+        display: block; 
+        text-decoration:none; 
+    }
+
+    .navigate.responsive li a:hover { 
+        background-color: #33658A;
+        color: #86BBD8;
+    }
+
+    /*** 5 Day ***/
+    .container2 {
+        display: none;
+    }
+
+    .container2 div {
+        display: none;
+    }
+    .wind #chill2 {
+        display:none
+    }
+    .picgrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*** Body Whole ***/
+body {
+    font-family: 'Merriweather', serif;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    color: #F6AE2D;
+}
+
+/*** Body - Header ***/
+header {
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background-color: #758E4F;
+    color: #fff;
+}
+
+header > img { 
+    display: inline-block;
+    width: 100%; 
+    max-width: 128px;
+    height: 128px;
+    margin: auto 0 auto 0;        
+}
+
+.headertext {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 1rem 0 1rem 5rem;
+}
+
+.headerh1-1 {
+    font-size: 1em;
+    font-family: 'Merriweather', serif;
+    color: #86BBD8;
+}
+
+.headerh1-2 {
+    font-size: 1em;
+    font-family: 'Merriweather', serif;
+    color: #F6AE2D;
+}
+
+.headerh2 {
+    font-size: .75em;
+    font-family: 'Merriweather', serif;
+    padding: 0rem;
+    margin: 0rem 0 0rem 0rem;
+    color: #fff;
+}
+
+.subheading {
+    font-size: 1.5rem;
+    color: #33658A;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+/*** Hamburger Menu ***/
+.hamburger { 
+    display: block;
+    position: relative;
+}
+
+/*** Navigation Bar ***/
+.navigate { 
+    list-style: none; 
+    padding-left: 0; 
+}
+
+.navigate li { 
+    display: none; 
+}
+
+/*** Body - Main ***/
+main h2 {
+    text-align: center;
+    color: #758E4F;
+}
+
+/*** Main Figure ***/
+.picgrid {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.picgrid img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/*** Main Containers ***/
+.container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    color: #758E4F;
+    margin: 1em auto 0 auto;
+}
+
+/*** Main Image ***/
+.container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+}
+
+/*** index.html container ***/
+.towndata {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    color: #758E4F;
+    margin: 1rem auto 1rem auto;       
+}
+
+section > article {
+    display: block;
+    box-shadow: 10px 5px 18px #86BBD8;
+    width: 100%;
+    max-width: 246px;
+    background-color: #F6AE2D;
+    color: #F26419;
+    border: 2.25px solid #33658A;
+    border-radius: 30px;
+    margin: 1rem;       
+}
+
+.towndata h2 {
+    color: #33658A;
+    text-align: center;
+}
+    
+.towndata p {
+    margin: 1em;
+}
+
+.towndata img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border: 1px solid #33658A;
+    max-width: 100%;
+    height: auto;
+    border-radius: 29px;
+    margin: 0;
+}
+
+/*** Text Over Image ***/
+.imgbox {
+    display: block;
+    position: absolute;
+    border-radius: 25px;
+    max-width: 210px;
+    width: 100%;
+    top: 10px;
+    left: 10px;
+    margin: 30px;
+    background-color: #758E4F;
+    border: 5px solid #33658A;
+    opacity: 0.9;
+}
+
+.imgbox h3 {
+    margin: 5%;
+    text-align: left;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #33658A;
+    text-shadow:
+        -1px -1px 0 #F6AE2D,
+        1px -1px 0 #86BBD8,
+        -1px 1px 0 #86BBD8,
+        1px 1px 0 #86BBD8;
+}
+
+.imgbox p {
+    margin: 5%;
+    text-align: left;    
+    font-size: 14px;
+    color: #F6AE2D;
+    text-shadow:
+        -1px -1px 0 #86BBD8,
+        1px -1px 0 #33658A,
+        -1px 1px 0 #33658A,
+        1px 1px 0 #33658A;
+}
+
+/* Paragraph with styling within imgbox*/
+.pwhite {
+    font-size: 14px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    color: #33658A;
+    text-shadow:
+        -1px -1px 0 #F6AE2D,
+        1px -1px 0 #86BBD8,
+        -1px 1px 0 #86BBD8,
+        1px 1px 0 #86BBD8;
+}
+
+.container.map {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: #86BBD8;
+}
+
+.container.map img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 2.5em 0 auto 0;
+}
+
+.container.map #site {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    color: #33658A;
+    margin: 1em 0 1em 0;
+}
+
+.container.map #site img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 20px;
+    height: auto;
+}
+
+.container.map iframe {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 1em 0 1em 0;
+}
+
+/*** Town Article ***/
+.container #article {
+    background-color: #86BBD8;
+}
+
+.container #article h3 {
+    color: #F26419;
+    text-align: left;
+    margin-bottom: 0;
+    padding: 1rem 0 0 1rem;
+}
+
+#author {
+    font-size: .75rem;
+    font-style: italic;
+    text-align: left;
+    padding: 0 0 0 1rem;
+}
+
+.container #article p {
+    color: #33658A;
+    font-size: .75rem;
+    padding: 0 0 1rem 2rem;
+    text-align: left;
+}
+
+.container #article img {
+    float: right;
+    border-radius: 25px;
+    max-width: 250px;
+    width: 100%;
+    margin: 1rem;
+}
+
+/*** Wind Chill ***/
+.wind {
+    display: flex;
+    justify-content: space-between;    
+    color: #33658A;
+}
+
+.wind h3 {
+    text-align: center;
+    color: #33658A;
+}
+
+.wind #chill1 {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+
+.wind #chill2 {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+
+.wind input {
+    width: 100%;
+    max-width: 30px;
+}
+
+/*** Form ***/
+form {
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+fieldset {
+    display: block;
+    border: 2px solid #758E4F;
+    border-radius: 20px;
+}
+
+legend, input, textarea {
+    display: block;
+    padding: .5rem 0;
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+legend {
+    color: #33658A;
+    font-size: 1.5rem;
+}
+
+label.rest {
+    color: #F26419;
+    font-weight: bold;
+    padding: .75rem 0;
+}
+
+label.rest select{
+    border-radius: 5px;
+    margin: .25rem 0 .5rem 0;
+}
+
+div#dLevel {
+    color: #F26419;
+    font-weight: bold;
+}
+
+div#ratingvalue {
+    display: inline-flex;
+    font-weight: bolder;
+}
+
+label.danger {
+    display: flex;
+    margin: 0 0 0 .5rem;
+}
+
+label.danger input{
+    margin: 0 .5rem 0 .5rem;
+}
+
+label.require {
+    color: #F26419;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    max-width: 35%;
+    height: auto;
+}
+
+label.require input:required {
+    border-left: #F6AE2D solid 8px;
+}
+
+label.require input:required:valid {
+    border-left: #33658A solid 8px;
+} 
+
+legend {
+    text-align: left;
+    margin: 0 0 0 2rem;
+}
+
+input#sub {
+    border: none;
+    background-color: #33658A;
+    color: white;
+    border-radius: 5px;
+    padding: .75rem 0;
+    width: 100%;
+    max-width: 30%;
+    box-shadow: 3px 3px#86BBD8;
+}
+
+p#storm {
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    margin: 10rem auto 10rem auto;
+    text-align: center;
+}
+
+/*** Footer ***/
+footer {
+    display: block;
+    margin: 1em auto 1em auto;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 12px;
+    text-align: center;
+    max-width: 850px;
+    height: auto;
+    background-color: #758E4F;
+    padding: 2em 0 2em 0;
+    color: #fff;    
+}

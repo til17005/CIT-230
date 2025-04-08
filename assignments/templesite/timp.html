@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Temple Inn and Suites Index page for Matthew Tilton - Student in CIT 230: Web Frontend Development at Brigham Young University-Idaho">
+        <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="icon" type="image/png" href="images/moroni.jpg">
+        <title>Temple Inn & Suites</title>
+    </head>
+    <body>
+        <header>
+            <div class="heading">
+                <h1>
+                    <span class="heading-h1-1">Temple</span>
+                    <span class="heading-h1-1">Inn</span>
+                    <span class="heading-h2-1">and</span>
+                    <span class="heading-h1-1">Suites</span>
+                </h1>
+                <h3 class="left">Where Spirituality Meets Hospitality!</h3>
+            </div>     
+        </header> 
+        <nav> 
+            <button class="navburger" onclick="myNavburger()">&#9776;</button>           
+            <ul id="mainmenu" class="navigate">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temple.html">Temples</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>     
+            </ul>
+        </nav>
+      	<main>
+            <div class="sticky">
+                <ul id="mainmenu2" class="mainNav3">
+                    <li><a href="slc.html">Salt Lake</a></li>
+                    <li><a href="payson.html">Payson</a></li>                
+                    <li><a href="timp.html">Timpanogos</a></li> 
+                    <li><a href="jordan.html">Jordan River</a></li>   
+                </ul> 
+            </div>
+            <div>
+                <h2 class="area" id="temple3">Mount Timpanogos Temple</h2>
+                <div class="img">
+                    <img src="images/timp.jpg" alt="Mount Timpanogos Temple">
+                </div>       
+            </div>
+            <div class="grid">
+                <div>
+                    <h3 class="sub">Contact:</h3>
+                    <p class="strong">Address:</p>
+                    <p>
+                        742 N 900 E<br>
+                        American Fork UT 84003-9124<br>
+                        United States<br>
+                    </p> 
+                    <p class="strong">Map:</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.7205385462844!2d-111.77266848460481!3d40.39288597936787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d8130a7e74225%3A0xe249e18f1bde2861!2sMount+Timpanogos+Utah+Temple!5e0!3m2!1sen!2sus!4v1544826103811"></iframe>
+                    <p class="strong">Telephone:</p>
+                    <p>
+                        801-763-4540<br>
+                    </p>
+                </div>
+                <div>
+                    <h3 class="sub">Schedule:</h3>
+                    <p class="strong">Baptism:</p>
+                    <p>4:30 AM - 4:30 PM</p>
+                    <p>6:30 AM - 9:00 PM</p>
+                    <p class="strong">Initiatory:</p>
+                    <p>Please call the temple.</p>
+                    <p class="strong">Endownment:</p>
+                    <p>6:00 AM - 8:00 PM</p>
+                    <p class="strong">Sealing:</p>
+                    <p>Please call the temple.</p>
+                </div>
+                <div>
+                    <h3 class="sub">Closure Dates:</h3>
+                        <div class="left" id="timp0"></div>
+                        <div class="left" id="timp1"></div>
+                        <div class="left" id="timp2"></div>
+                        <div class="left" id="timp3"></div>
+                        <div class="left" id="timp4"></div>
+                        <div class="left" id="timp5"></div>
+                        <div class="left" id="timp6"></div>
+                        <div class="left" id="timp7"></div>
+                        <div class="left" id="timp8"></div>
+                        <div class="left" id="timp9"></div>
+                        <div class="left" id="timp10"></div>
+                        <div class="left" id="timp11"></div>
+                    <h3 class="sub">Current Condition:</h3>
+                    <span class="icon" id="currentImage"></span>
+                    <div class="wrap">
+                        <span class="strong">Currently: </span><span id="output4"></span><br>
+                        <span class="strong">Temperature: </span><span id="temp"></span><span>&deg; F</span><br>
+                        <span class="strong">Humitity: </span> <span id="hum"></span><span>&#37;</span><br>
+                        <span class="strong">Wind Speed: </span> <span id="speed"></span><span> mph</span><br>
+                        <span class="strong">Wind Direction: </span> <span id="output3"></span><br>
+                        <span class="strong">Wind Chill: </span> <span id="output2"></span><span>&deg; F</span><br>
+                    </div>
+                </div>
+            </div>
+        </main>      
+      	<footer>
+            <ul class="navigate">
+                <li><a href="http://mormon.org">Mormon.org</a></li>
+                <li><a href="http://lds.org">LDS.org</a></li>                
+                <li><a href="https://www.lds.org/temples?lang=eng">More Latter-day Saint Temple Info</a></li>    
+            </ul>
+            <div>&copy; 2018 - Matthew M. Tilton - Utah - <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></div>
+            <div id="thisDay"></div>
+        </footer>
+        <script src="scripts/date.js"></script> 
+        <script src="scripts/navburger.js"></script>
+        <script src="scripts/wayfinding.js"></script> 
+        <script src="scripts/closure.js"></script>
+        <script src="scripts/timp.js"></script> 
+    </body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Temple Inn and Suites Index page for Matthew Tilton - Student in CIT 230: Web Frontend Development at Brigham Young University-Idaho">
+        <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="icon" type="image/png" href="images/moroni.jpg"> 
+        <title>Temple Inn & Suites</title>
+    </head>
+    <body>
+        <header>
+            <div class="heading">
+                <h1>
+                    <span class="heading-h1-1">Temple</span>
+                    <span class="heading-h1-1">Inn</span>
+                    <span class="heading-h2-1">and</span>
+                    <span class="heading-h1-1">Suites</span>
+                </h1>
+                <h3 class="left">Where Spirituality Meets Hospitality!</h3>
+            </div>     
+        </header> 
+        <nav> 
+            <button class="navburger" onclick="myNavburger()">&#9776;</button>           
+            <ul id="mainmenu" class="navigate">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temple.html">Temples</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>     
+            </ul>
+        </nav>
+      	<main>
+           <h2 class="area">Reservations</h2>
+            <form method="GET" action="thankyou.html">
+                <fieldset>
+                    <legend>Your Contact Information</legend>
+                    <label class="require">Full Name* <input type="text" name="name" pattern="[A-Za-z].{5,}" required></label>
+                    <label class="rest">Email <input type="email" name="email" placeholder="youremail@gmail.com"></label>
+                    <label class="require">Phone* <input type="tel" name="phone" required></label>
+                    <label class="require">Zip Code* <input type="number" name="zip" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Reservation Information</legend>
+                    <label class="require">Date* <input type="date" name="date"></label>
+                    <label class="require">Number of Rooms* <input type="number" name="room" required></label>
+                    <label class="require">Room Type* 
+                        <input list="type" name="type">
+                            <datalist id="type">
+                                <option value="Single King">
+                                <option value="Double Queen">
+                                <option value="Anniversary Suite">
+                                <option value="Family Suite">
+                                <option value="Grand Suite">
+                            </datalist>
+                    </label>
+                    <label class="require">Location Choice* <br>
+                        <select name="location">
+                            <option value="" disabled selected>Select Region</option>
+                            <option value="timp">American Fork</option>
+                            <option value="jordan">South Jordan</option>
+                            <option value="payson">Pasyson</option>
+                            <option value="slc">Salt Lake City</option>   
+                        </select>
+                    </label>                    
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label class="rest">Special Accommodations/Comments<textarea name="comments"></textarea></label>
+                    <input class="sub" type="submit" value="Reserve Your Room">
+                </fieldset>
+            </form>
+        </main>      
+        <footer>
+            <ul class="navigate">
+                <li><a href="http://mormon.org">Mormon.org</a></li>
+                <li><a href="http://lds.org">LDS.org</a></li>                
+                <li><a href="https://www.lds.org/temples?lang=eng">More Latter-day Saint Temple Info</a></li>    
+            </ul>
+            <div>&copy; 2018 - Matthew M. Tilton - Utah - <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></div>
+            <div id="thisDay"></div>
+        </footer>
+        <script src="scripts/date.js"></script> 
+        <script src="scripts/navburger.js"></script>
+        <script src="scripts/wayfinding.js"></script>     
+    </body>
+</html>

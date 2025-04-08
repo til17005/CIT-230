@@ -1,0 +1,216 @@
+/*** Begin Media Filter ***/
+@media only screen and (max-width: 600px) {
+    /*** Navigation Bar ***/
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #33658A;
+        border: 1.5px solid #F6AE2D;
+    }
+
+    nav li a {
+        display: block;
+        color: #F6AE2D;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    nav li {
+        text-align: center;
+        border-bottom: 1px solid #F6AE2D;
+    }
+
+    nav li:last-child {
+        border-bottom: none;
+    }
+
+    nav li a.active {
+        background-color: #758E4F;
+        color: white;
+    }
+
+    nav li a:hover:not(.active) {
+        background-color: #F6AE2D;
+        color: white;
+    }
+
+    /*** 5 Day ***/
+    .container2 {
+        visibility: hidden;
+    }
+
+    .container2 div {
+        visibility: hidden;
+    }
+}
+ 
+body {
+    font-family: 'Merriweather', serif;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: #758E4F;
+    padding: .5rem;
+    color: #fff;
+}
+
+header > img {  
+    vertical-align: middle;
+}
+
+.headertext {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 1rem 0 1rem 5rem;
+}
+
+.headerh1-1 {
+    font-size: 1em;
+    font-family: 'Merriweather', serif;
+    color: #86BBD8;
+}
+
+.headerh1-2 {
+    font-size: 1em;
+    font-family: 'Merriweather', serif;
+    color: #F6AE2D;
+}
+
+.headerh2 {
+    font-size: .75em;
+    font-family: 'Merriweather', serif;
+    padding: 0rem;
+    margin: 0rem 0 0rem 0rem;
+    color: #fff;
+}
+
+/*** Current Weather Condition ***/
+.current {
+    display: inline-block;
+    border-radius: 25px;
+    vertical-align: middle;
+    margin: 1rem 0 1rem 5rem;
+    padding: .5rem;
+    vertical-align: middle;
+    color: #fff;
+    background-color: #86BBD8;
+    border: 3pt solid #F26419;
+    font-size: 1.1rem;
+    box-shadow: 5px 5px 5px black;
+}
+
+.current img {
+    width: 90px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.current p {
+    display: inline-block;
+    vertical-align: middle;
+    padding: .5rem;
+    font-size: 14px;
+    color: #000;
+}
+
+.subheading {
+    font-size: 1.5rem;
+    color: #33658A;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    color: #F6AE2D;
+}
+
+main h2 {
+    text-align: center;
+    color: #758E4F;
+}
+
+/*** Main Containers ***/
+.container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    color: #758E4F;
+}
+
+/*** Main Image ***/
+.container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+}
+
+/*** Text Over Image ***/
+.imgbox {
+    position: absolute;
+    border-radius: 25px;
+    max-width: 200px;
+    width: 100%;
+    top: 10px;
+    left: 10px;
+    margin: 30px;
+    background-color: #758E4F;
+    border: 5px solid #33658A;
+    opacity: 0.6;
+}
+
+.imgbox h3 {
+    margin: 5%;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #F26419;
+    text-shadow:
+        -1px -1px 0 #F6AE2D,
+        1px -1px 0 #33658A,
+        -1px 1px 0 #33658A,
+        1px 1px 0 #33658A;
+}
+
+.imgbox p {
+    margin: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #F26419;
+    text-shadow:
+        -1px -1px 0 #F6AE2D,
+        1px -1px 0 #33658A,
+        -1px 1px 0 #33658A,
+        1px 1px 0 #33658A;
+}
+
+/* Paragraph with styling within imgbox*/
+.pwhite {
+    font-size: 14px;
+    font-family: 'Merriweather', serif;
+    color: #33658A;
+    text-shadow:
+        -1px -1px 0 #F26419,
+        1px -1px 0 #86BBD8,
+        -1px 1px 0 #86BBD8,
+        1px 1px 0 #86BBD8;
+}
+
+/*** Footer ***/
+footer p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 12px;
+}

@@ -1,0 +1,73 @@
+@media only screen and (max-width: 835px) and (min-width: 600px) {
+    .picgrid {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    /*** Navigation Bar ***/
+    nav {  
+        list-style-type: none;
+        margin: 0 auto 0 auto;
+        padding: 0;
+        background-color: #33658A;
+    }
+    nav ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #33658A;
+        border: none;
+    }
+
+    .navigate li a {
+        display: block;
+        color: #F6AE2D;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    .navigate li {
+        text-align: center;
+        border-bottom: 1px solid #F6AE2D;
+    }
+
+    .navigate li:last-child {
+        border-bottom: none;
+    }
+
+    .navigate li a.active {
+        background-color: #758E4F;
+        color: white;
+    }
+
+    .navigate li a:hover:not(.active) {
+        background-color: #F6AE2D;
+        color: white;
+    }
+    
+    .navigate.responsive { 
+        position: relative; 
+    }
+
+    .navigate.responsive li { 
+        background-color: #33658A;    
+        display: block; 
+        width: 100%; 
+        margin: 0 0 0 0; 
+        border-top: .25px solid #F6AE2D;
+        border-bottom: .25px solid #F6AE2D;
+    }
+    
+    .navigate.responsive li a {  
+        padding: .25rem;
+        color: #F6AE2D;
+        text-align: center;  
+        display: block; 
+        text-decoration:none; 
+    }
+
+    .navigate.responsive li a:hover { 
+        background-color: #33658A;
+        color: #86BBD8;
+    }
+}

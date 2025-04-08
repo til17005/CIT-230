@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Lesson 8: Assignment Storm Center page for Matthew Tilton - Student in CIT 230: Web Frontend Development at Brigham Young University-Idaho">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather%7cOpen+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/med.css">
+        <link rel="stylesheet" href="styles/large.css">  
+        <title>WeatherorNot</title>
+    </head>
+    <body>
+        <header>
+            <img src="images/clear.png" alt="WeatherorNot Logo">
+            <div class="headertext">
+            <h1>
+                <span class="headerh1-1">Weather</span>
+                <span class="headerh2">or</span>
+                <span class="headerh1-2">Not</span>
+            </h1>
+            <div class="subheading">Place Holder</div>
+            </div>
+            <div class="current">
+                <img src="images/few-clouds.png" alt="Current conditions weather icon">
+                <p>Cloudy</p>
+            </div>      
+        </header> 
+        <nav> 
+            <button class="hamburger" onclick="myHamburger()">&#9776;</button>           
+            <ul class="navigate">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>       
+            </ul>
+        </nav>
+        <main>
+            <h2>Storm Center</h2>
+            <form method="GET" action="thanks.html">
+                <fieldset>
+                    <legend>Your Contact Information</legend>
+                    <label class="require">Full Name* <input type="text" name="name" pattern="[A-Za-z].{5,}" required></label>
+                    <label class="rest">Email <input type="email" name="email" placeholder="youremail@gmail.com"></label>
+                    <label class="require">Phone* <input type="tel" name="phone" required></label>
+                    <label class="require">Zip Code* <input type="number" name="name" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Data</legend>
+                    <label class="rest">Date <input type="date" name="date"></label>
+                    <label class="rest">Storm Type 
+                        <input list="type" name="type">
+                            <datalist id="type">
+                                <option value="Flash Flood">
+                                <option value="Hail">
+                                <option value="Hurricane">
+                                <option value="Thunderstorm">
+                                <option value="Tornado">
+                            </datalist>
+                    </label>
+                    <label class="rest">Storm Severity</label>
+                        (<div id="ratingvalue">5</div>)
+                        <input id="range" type="range" name="range" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)">
+                    <label class="rest">Storm Region <br>
+                        <select name="region">
+                            <option value="" disabled selected>Select Region</option>
+                            <option value="franklin">Franklin</option>
+                            <option value="greenville">Greenville</option>
+                            <option value="springfield">Springfield</option>
+                        </select>
+                    </label>                    
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <div id=dLevel>User In-danger</div>
+                    <label class="danger"><input type="radio" name="danger" value="yes">Yes</label>
+                    <label class="danger"><input type="radio" name="danger" value="maybe">Maybe</label>
+                    <label class="danger"><input type="radio" name="danger" value="no">No</label><br>
+                    <label class="rest">Comments<textarea name="comments"></textarea></label>
+                    <input id="sub" type="submit" value="Report Storm">
+                </fieldset>
+            </form>
+            <script src="scripts/hamburger.js"></script>
+            <script src="scripts/rating.js"></script> 
+        </main>      
+      	<footer>
+            <div>&copy; 2018 - Matthew M. Tilton - Utah - <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></div>
+            <div id="thisDay"></div>
+        </footer>
+    </body>
+</html>
